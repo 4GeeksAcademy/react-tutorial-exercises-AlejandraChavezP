@@ -14,7 +14,14 @@ const data = {
 
 // Modify the 'content' variable below to display the desired bootstrap card
 let content = (
-		<img src={data.image} />
+	<div class="card m-5">
+	<img class="card-img-top" src={data.image} alt="Card image cap" />
+	<div class="card-body">
+	  <h5 class="card-title">{data.cardtitle}</h5>    
+	  <p class="card-text">{data.cardDescription}</p>
+	  <a href={data.button.url} class="btn btn-primary">Go somewhere</a>{data.button}
+	</div>
+  </div>
 );
 
 ReactDOM.render(content, document.querySelector("#myDiv"));

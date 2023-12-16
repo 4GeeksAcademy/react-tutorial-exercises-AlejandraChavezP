@@ -18,22 +18,21 @@ const BootstrapCard = props => {
 	);
 };
 BootstrapCard.propTypes = {
-	title: PropType.string,
+	title: PropType.string
 	// 2) Add here the new properties into the proptypes object
 	imageUrl: PropType.string,
 	description: PropType.string,
 	buttonUrl: PropType.string,
-	buttonLabel: PropType.string,
+	buttonLabel: PropType.string
 };
 // 3) Use ReactDOM to add the component into then DOM element #myDiv
 ReactDOM.render(
 	<BootstrapCard
 		title="Bob Dylan"
-		imageUrl= "https://github.com/4GeeksAcademy/react-tutorial-exercises/blob/master/.learn/assets/Dylan.png?raw=true"
-		description="Bob Dylan (born Robert Allen Zimmerman, May 24, 1941) is an American singer-songwriter."
+		imageUrl= "https://en.wikipedia.org/wiki/Bob_Dylan"
+		description="Bob Dylan (born Robert Allen Zimmerman, May 24, 1941) is an American singer/songwriter, author, and artist who has been an influential figure in popular music and culture for more than five decades."
 		buttonUrl="https://en.wikipedia.org/wiki/Bob_Dylan"
-		buttonLabel="Go to wikipedia"
+		buttonLabel="Go to Wikipedia"
 	/>,
-	document.querySelector("#myDiv")
-	
-	);
+	document.querySelector(#myDiv)
+};
